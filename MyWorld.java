@@ -18,7 +18,16 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         Jippo swag = new Jippo();
-        addObject(swag, getWidth() / 2, getHeight()/2);
+        addObject(swag, getWidth() / 2, 350);
         
+        spawnBread();
+    }
+    
+    public void spawnBread()
+    {
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        Bread bread = new Bread();
+        addObject(bread, x, y);
     }
 }

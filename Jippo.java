@@ -14,7 +14,21 @@ public class Jippo extends Actor
      */
     public void act() 
     {
-        move(1);
-        turn(2);
-    }    
+        if(Greenfoot.isKeyDown("a"))
+        {
+            move(-2);
+        }   
+        if (Greenfoot.isKeyDown("d"))
+        {
+            move(2);
+        }
+        
+        if (isTouching(Bread.class))
+        {
+            removeTouching(Bread.class);
+            MyWorld world = (MyWorld) getWorld();
+            //world.increaseScore();
+            //world.spawnApple();
+        }
+    }
 }

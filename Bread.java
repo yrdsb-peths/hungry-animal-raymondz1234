@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class bread here.
+ * get that bread boy
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -18,7 +18,14 @@ public class Bread extends Actor
     public void act() 
     {
         setRotation(90);
-        move(2);
+        move(5);
         // Add your action code here.
+        
+        MyWorld world = (MyWorld)getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.gameOver();
+            world.removeObject(this);
+        }
     }    
 }

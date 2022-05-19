@@ -16,11 +16,11 @@ public class Jippo extends Actor
     {
         if(Greenfoot.isKeyDown("a"))
         {
-            move(-3);
+            move(-4);
         }   
         if (Greenfoot.isKeyDown("d"))
         {
-            move(3);
+            move(4);
         }
         
         if (isTouching(Bread.class))
@@ -28,6 +28,7 @@ public class Jippo extends Actor
             removeTouching(Bread.class);
             MyWorld world = (MyWorld) getWorld();
             world.spawnBread();
+            world.increaseScore();
         }
     }
 }

@@ -2,8 +2,8 @@
 class.Bread.image=bread.png
 class.Cactus.image=cactus.png
 class.GameOverWorld.image=space.jpg
-class.Jippo.image=hippo.png
-class.MyWorld.image=wet-blue.jpg
+class.Jippo.image=mosey1.PNG
+class.MyWorld.image=background.jpg
 class.TitleScreen.image=space.jpg
 dependency1.from=GameOverWorld
 dependency1.to=Label

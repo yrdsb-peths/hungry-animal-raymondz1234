@@ -21,7 +21,7 @@ public class Cactus extends Actor
     public void act() 
     {
         // Add your action code here.
-        move(30);
+        move(10);
         turn(getRandomNumber(-45, 45));
     }    
 }

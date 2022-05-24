@@ -21,8 +21,6 @@ public class MyWorld extends World
         Jippo swag = new Jippo();
         addObject(swag, getWidth() / 2, 350);
         addObject(scoreLabel, 50, 50);
-        Cactus cactus = new Cactus();
-        addObject(cactus, getWidth() / 2, 350);
         spawnBread();
     }
 
